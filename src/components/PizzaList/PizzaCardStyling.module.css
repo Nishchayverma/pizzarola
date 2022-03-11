@@ -1,0 +1,58 @@
+.pizzaCard{
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 1.5rem;
+    padding: 10px 15px 20px 15px;
+    border-color: rgb(232, 232, 232);
+    box-shadow: rgb(28 28 28 / 12%) 0px 0.4rem 1.8rem;
+}
+
+
+.pizzaImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.pizzaName{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.priceTypeStyling{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+.nameRatingStyling{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnContainer{
+    width: 100%;
+}
+
+.btn{
+    margin-top: 10px;
+    display: flex;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #ECA442;
+    border-radius: 0.7rem;
+    margin-left: auto;
+}
+
+@media screen and (max-width:400px){
+    .pizzaCard{
+        width: 300px;
+    }
+}

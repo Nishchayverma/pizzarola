@@ -1,0 +1,20 @@
+.mainContainer{
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 100%;
+    background: #fcfcfc;
+    padding: 20px 150px;
+    box-shadow: rgb(0 0 0 / 10%) 0px -1px 20px;
+}
+
+@media screen and (max-width:900px) {
+    .mainContainer{
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mainContainer{
+        padding: 10px 10px;
+    }
+}

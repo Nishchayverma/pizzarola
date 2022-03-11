@@ -1,0 +1,117 @@
+.nav {
+    padding: 0px 30px;
+    display: flex;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+        0px 4px 5px 0px rgb(0 0 0 / 14%),
+        0px 1px 10px 0px rgb(0 0 0 / 12%);
+    align-items: center;
+    background-color: #61120E;
+    margin-bottom: 50px;
+}
+
+.logo {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.brandName {
+    font-size: 32px;
+    color: #ECA442;
+    margin-left: 20px;
+}
+
+.linkContainer {
+    display: flex;
+    margin-left: auto;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.activeCart {
+    position: absolute;
+    top: -10px;
+    width: 23px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: black;
+    font-weight: 600;
+    background: #ECA442;
+    height: 23px;
+    border-radius: 50%;
+    right: -20px;
+    font-size: 14px;
+}
+
+.headerLinks {
+    list-style: none;
+    font-size: 24px;
+    text-decoration: none;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .linkContainer {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav {
+        padding: 5px 15px;
+    }
+
+    .logo {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .brandName {
+        font-size: 24px;
+        margin-left: 10px;
+        line-height: 0.4;
+    }
+
+    .headerLinks {
+        font-size: 18px;
+    }
+
+    .activeCart {
+        top: -6px;
+        width: 15px;
+        right: -15px;
+        color: black;
+        height: 15px;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    .linkContainer {
+        justify-content: space-between;
+    }
+
+    .headerLinks {
+        font-size: 14px;
+    }
+
+    .brandName {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .linkContainer {
+        width: 60%;
+    }
+    .activeCart {
+        top: -4px;
+        width: 13px;
+        right: -12px;
+        color: black;
+        height: 13px;
+        font-size: 9px;
+    }
+}

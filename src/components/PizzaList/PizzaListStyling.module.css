@@ -1,0 +1,22 @@
+.cardsContainer{
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 1200px){
+    .cardsContainer{
+        grid-template-columns: auto auto;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .cardsContainer{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    
+}
+

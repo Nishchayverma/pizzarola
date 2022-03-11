@@ -1,0 +1,74 @@
+.mainContainer {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 30px 0px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    min-width: 500px;
+    background: #fcfcfc;
+}
+
+.pizzaName{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bottomContainer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    width: calc(100% + 30px);
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 10%) 0px -1px 20px;
+    z-index: 1000;
+    border-radius: 0px 0px 0.6rem 0.6rem;
+}
+
+.itemCount{
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ECA442;
+    margin-right: 10px; 
+    font-size: 16px;
+}
+.increDecre{
+    cursor: pointer;
+   font-size: 16px;
+   font-weight: 600;
+}
+.orderBtn{
+    flex: 3;
+    display: flex;
+    width: 200px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ECA442;
+    border-radius: 5px;
+    margin-left: auto;
+    font-weight: 600;
+}
+
+@media screen and (max-width:650px){
+    .mainContainer {
+        min-width: 400px;
+    }
+    
+}
+
+@media screen and (max-width:410px){
+    .mainContainer {
+        min-width: 350px;
+        padding: 20px 20px 0px 20px;
+    }
+    
+}

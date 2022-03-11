@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header/Header'
+import PizzaPage from './pages/PizzaPage'
+import CartPage from './pages/CartPage'
+import Footer from './components/Footer/Footer'
+import { Routes, Route } from 'react-router-dom'
+import { PizzaContextProvider } from './contexts/pizzaContext'
+import { CartContextProvider } from './contexts/cartContext'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <PizzaContextProvider>
+            <CartContextProvider>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<PizzaPage />} />
+                    <Route path="/cart" element={<CartPage />} />
+                </Routes>
+                <Footer />
+            </CartContextProvider>
+        </PizzaContextProvider>
+    )
 }
 
-export default App;
+export default App
