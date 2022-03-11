@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pizzarola/static/css/main.89a22b92.css",
+    "main.js": "/pizzarola/static/js/main.e9d8b89f.js",
+    "index.html": "/pizzarola/index.html",
+    "main.89a22b92.css.map": "/pizzarola/static/css/main.89a22b92.css.map",
+    "main.e9d8b89f.js.map": "/pizzarola/static/js/main.e9d8b89f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89a22b92.css",
+    "static/js/main.e9d8b89f.js"
+  ]
+}
